@@ -1,6 +1,6 @@
 [project]
 name = "oswrite"
-version = "0.0.1"
+version = "0.0.2"
 description = "CLI tool for processing audio files"
 readme = "README.md"
 authors = [{name = "Prabin Nepal"}]
@@ -13,6 +13,7 @@ dependencies = [
     "click",
     "openai>=1.0",
     "simpleaudio; sys_platform == 'darwin'"
+    "python-docx"
 ]
 
 [project.urls]

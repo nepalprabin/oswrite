@@ -31,3 +31,19 @@ Or you can pass it using --token:
 ```
 oswrite --token "..." --audio_file "test.mp3"
 ```
+
+## Saving transcribed result
+
+If you want to save transcribed result to a file, additionally you can add <code>output</code> parameter with a filename.
+
+For text file:
+
+```
+oswrite --token "..." --audio_file "test.mp3 --output "test.txt"
+```
+
+For docx file:
+
+```
+oswrite --token "..." --audio_file "test.mp3 --output "test.docx"
+```

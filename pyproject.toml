@@ -1,0 +1,32 @@
+[project]
+name = "oswrite"
+version = "0.1"
+description = "CLI tool for processing audio files"
+readme = "README.md"
+authors = [{name = "Prabin Nepal"}]
+license = {text = "Apache-2.0"}
+requires-python = ">=3.8"
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "click",
+    "openai>=1.0",
+    "simpleaudio; sys_platform == 'darwin'"
+]
+
+[project.urls]
+Homepage = "https://github.com/nepalprabin/oswrite"
+Changelog = "https://github.com/nepalprabin/oswrite/releases"
+Issues = "https://github.com/simonw/oswrite/issues"
+CI = "https://github.com/simonw/oswrite/actions"
+
+[project.entry-points.console_scripts]
+oswrite = "oswrite.cli:cli"
+
+[project.optional-dependencies]
+test = ["pytest", "cogapp"]
+
+[tool.ruff.lint]
+# Enable the isort rules.
+extend-select = ["I"]

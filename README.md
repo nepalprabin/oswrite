@@ -5,7 +5,9 @@ CLI tool for running audio through the OpenAI whisper API
 See oswrite: a CLI tool for running audio through the OpenAI whisper API.
 
 PS: It is inspired by Simon Willamson's [osread](https://github.com/simonw/ospeak)
-Installation
+
+## Installation
+
 Install this tool using pip:
 
 ```python

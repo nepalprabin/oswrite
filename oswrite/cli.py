@@ -1,4 +1,5 @@
 import os
+import sys
 import click
 from openai import OpenAI
 
@@ -26,4 +27,6 @@ def cli(audio_file, token):
         raise click.BadOptionUsage(
             "audio_file", "Input file must be .mp3 or .wav format"
         )
-    transcribe(audio_file, token)
+    result = transcribe(audio_file, token)
+    sys.stdout.write(str(result) + "\n")
+    sys.stdout.flush()  # Ensure everything in the buffer is written out

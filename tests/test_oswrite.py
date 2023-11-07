@@ -1,7 +1,10 @@
 from click.testing import CliRunner
 from oswrite.cli import cli
 import pytest
+import openai
+import os
 
+openai.api_key = os.getenv("OPENAI_API_KEY")
 runner = CliRunner()
 
 

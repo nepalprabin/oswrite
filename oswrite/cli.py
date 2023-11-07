@@ -10,7 +10,6 @@ def transcribe(audio_file, api_key=None):
     transcript = client.audio.transcriptions.create(
         model="whisper-1", file=audio_file, response_format="text"
     )
-    print(transcript)
     return transcript
 
 
@@ -24,7 +23,3 @@ def transcribe(audio_file, api_key=None):
 )
 def cli(audio_file, token):
     transcribe(audio_file, token)
-
-
-if __name__ == "__main__":
-    cli()

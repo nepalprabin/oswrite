@@ -2,8 +2,6 @@ import os
 import click
 from openai import OpenAI
 
-client = OpenAI()
-
 
 def transcribe(audio_file, api_key=None):
     client = OpenAI(api_key=api_key)

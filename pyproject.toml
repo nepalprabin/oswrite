@@ -1,6 +1,6 @@
 [project]
 name = "oswrite"
-version = "0.1"
+version = "0.0.1"
 description = "CLI tool for processing audio files"
 readme = "README.md"
 authors = [{name = "Prabin Nepal"}]

@@ -11,16 +11,16 @@ classifiers = [
 ]
 dependencies = [
     "click",
+    "python-docx",
     "openai>=1.0",
     "simpleaudio; sys_platform == 'darwin'"
-    "python-docx"
 ]
 
 [project.urls]
 Homepage = "https://github.com/nepalprabin/oswrite"
 Changelog = "https://github.com/nepalprabin/oswrite/releases"
-Issues = "https://github.com/simonw/oswrite/issues"
-CI = "https://github.com/simonw/oswrite/actions"
+Issues = "https://github.com/nepalprabin/oswrite/issues"
+CI = "https://github.com/nepalprabin/osread/actions"
 
 [project.entry-points.console_scripts]
 oswrite = "oswrite.cli:cli"
